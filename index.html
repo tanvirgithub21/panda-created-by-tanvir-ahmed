@@ -10,8 +10,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- bootstrap cdn link end  -->
 
-    <!-- css stylesheet link  -->
+    <!-- css stylesheet link start  -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- css stylesheet link end  -->
+
+    <!-- fontawesome cdn link start  -->
+    <script src="https://kit.fontawesome.com/81c2aa6f41.js" crossorigin="anonymous"></script>
+    <!-- fontawesome cdn link end  -->
 
 </head>
 <body>
@@ -19,11 +24,170 @@
 
     <!-- header section start  -->
     <header>
-        
+    
+    <!-- nav bar style start  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+
+              <a class="navbar-brand" href="#">
+                  <img src="./images/logo.png" alt="logo img" width="100px">
+              </a>
+
+              <!-- Responsive nav bar button style start  -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+              <!-- Responsive nav bar button style end  -->
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Shoes</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Backpack</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Subscribe</a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </nav>
+        <!-- nav bar style start  -->
+
+        <!-- Brand Exploring and auto slider style start  -->
+        <div class="container panda-bg-primary my-4 rounded-3">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+
+
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active"><!-- carousel item no 1 -->
+                      <div class="row">
+
+                        <div class="col-lg-7 d-flex justify-content-center align-items-center">
+                            <div class="text-wrap">
+                                <h1 class="mb-4 ">Mega LCD TV For Sports</h1>
+                                <p>This is the best TV in the world for people who just want to waste time in front of tv</p>
+                                <h2 class="mb-4 ">$ 999.99</h2>
+                                <button type="button" class="btn btn-primary d-flex align-items-center "><i class="fas fa-shopping-cart me-2"></i><span>Buy Now</span></button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5">
+                            <img src="./images/banner-images/tv.png" class="d-block w-100" alt="tv img">
+                        </div>
+
+                      </div><!-- row end  -->
+                  </div>
+
+                  <div class="carousel-item"><!-- carousel item no 2 -->
+                      <div class="row">
+
+                        <div class="col-lg-7 d-flex justify-content-center align-items-center">
+                            <div class="text-wrap">
+                                <h1 class="mb-4 ">Cool Dude Headphone</h1>
+                                <p>This is the best Headphone in the world for people who just want to waste time in front of funky world</p>
+                                <h2 class="mb-4 ">$ 399.99</h2>
+                                <button type="button" class="btn btn-primary d-flex align-items-center "><i class="fas fa-shopping-cart me-2"></i><span>Buy Now</span></button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5">
+                            <img src="./images/banner-images/headphone.png" class="d-block w-100" alt="headphone img">
+                        </div>
+
+                      </div><!-- row end  -->
+                  </div>
+
+
+                  <div class="carousel-item"><!-- carousel item no 3 -->
+                      <div class="row">
+
+                        <div class="col-lg-7 d-flex justify-content-center align-items-center">
+                            <div class="text-wrap">
+                                <h1 class="mb-4 ">X-box For your living room</h1>
+                                <p>This is the best x-box in the world for people who just want to waste time in front of fake sports.</p>
+                                <h2 class="mb-4 ">$ 599.99</h2>
+                                <button type="button" class="btn btn-primary d-flex align-items-center "><i class="fas fa-shopping-cart me-2"></i><span>Buy Now</span></button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5">
+                            <img src="./images/banner-images/xbox.png" class="d-block w-100" alt="xbox img">
+                        </div>
+
+                      </div><!-- row end  -->
+                  </div>
+                  
+
+                </div>
+
+
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+        </div>
+        <!-- Brand Exploring and auto slider style end  -->
+
+
     </header>
     <!-- header section end  -->
 
+    <main>
+        <!-- category section style start  -->
+         <section class="category container">
 
+            
+                <div class="row gx-5">
+
+                  <div class="d-flex justify-content-center align-items-center col-lg-4 bg-primary p-3 rounded-3">
+                    <h1>Watch</h1>
+                    <img src="./images/categories/watch.png" alt="Watch image">
+                  </div>
+
+                  <div class="d-flex justify-content-center align-items-center col-lg-4 bg-primary p-3 rounded-3">
+                    <h1>Backpack</h1>
+                    <img src="./images/categories/bag.png" alt="backpack image">
+                  </div>
+
+                  <div class="d-flex justify-content-center align-items-center col-lg-4 bg-primary p-3 rounded-3">
+                    <h1>Shoes</h1>
+                    <img src="./images/categories/shoes.png" alt="shoes image">
+                  </div>
+                  
+                </div>`
+
+
+         </section>
+        <!-- category section style end  -->
+
+
+    </main>
 
 
 
